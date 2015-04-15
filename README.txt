@@ -4,3 +4,11 @@ tudo somado, devias
 precipitar-te, de vez, nas águas
 estás nu n'areia, no vento
 dorme, meu filho
+
+e não, isto não é uma lhama:
+ //
+<'l
+ ll   
+ llama~
+ || ||      
+ '' ''
