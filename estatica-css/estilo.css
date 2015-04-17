@@ -1,3 +1,36 @@
-body{
-	background-color:#3b3b3b;
+body {
+	margin:0 auto;
+	width:50%;
+	float:middle;
+	font-family: Arial;
+	font-size:1em;
+	font-color:#777;
+}
+
+footer{
+	margin: 10px 10px;
+	border-top: 1px #777 solid;
+	float:middle;
+}
+
+article {
+
+}
+
+h2 {
+	margin:10px 10px;
+	font-family: Georgia;
+	font-size: 1.4em;
+}
+
+p {
+	margin: 10px 10px;
+}
+
+main {
+	
+}
+
+.bloco-conteudo {
+	margin: 10px 10px;
 }
