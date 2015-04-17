@@ -3,34 +3,45 @@ body {
 	width:50%;
 	float:middle;
 	font-family: Arial;
-	font-size:1em;
+	font-size:1.1em;
 	font-color:#777;
-}
-
-footer{
-	margin: 10px 10px;
-	border-top: 1px #777 solid;
-	float:middle;
-}
-
-article {
-
-}
-
-h2 {
-	margin:10px 10px;
-	font-family: Georgia;
-	font-size: 1.4em;
-}
-
-p {
-	margin: 10px 10px;
 }
 
 main {
 	
 }
 
-.bloco-conteudo {
+footer {
+	font-size: 0.8em;
+	text-align:center;
 	margin: 10px 10px;
+	border-top: 1px #777 solid;
+	float:middle;
+}
+
+article {
+	margin: 10px 10px;
+}
+
+h2 {
+	margin:10px 10px;
+	font-family: Georgia;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+p {
+	margin: 10px 10px;
+}
+
+#footer-content {
+	float:right;
+}
+
+#lhama {
+	float:left;
+}
+
+#lhama img {
+	margin:5px 10px;
 }
