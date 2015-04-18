@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>Cadastre-se - Sistemas de Informação I</title>
+		<link rel="stylesheet" type="text/css" href="estilo.css" />
 	</head>
 
 	<body>
@@ -13,20 +14,28 @@
 			</article>
 
 
-			<article>
-				<form action="" float="right" autocomplete>
-				<ul>
-					<li><input type="text" name="matricula" maxlength=9 placeholder="Digite sua matrícula" autofocus /> Matrícula</li>
-					<li><input type="text" name="nome" placeholder="Digite seu nome" /> Nome Completo</li>
-				</ul>
+			<article class="form-container">
+				<form action="obrigado.html" autocomplete>
+					<p class="matricula">
+						<input type="text" name="matricula" maxlength=9 placeholder="Digite sua matrícula" pattern="[0-9]{9}" required autofocus />
+					</p>
+					<p class="nome">
+						<input type="text" name="nome" placeholder="Digite seu nome" required/>
+					</p>
+					<p class="email">
+						<input type="email" name="email" placeholder="Digite seu e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required />
+					</p>
+					<p class="enviar">
+						<input type="submit" href="obrigado.html" name="enviar" value="Matricular" />
+					</p>
 				</form>
-			</article>
-			<article>
-				<p><b><a href="obrigado.html">Efetivar meu cadastro.</a></b></p>
 			</article>
 		</main>
 		<footer>
-			<p>SI1 2015.1 @ UFCG &middot; <a href="index.html">Página inicial</a> &middot; Dúvidas? <a href="mailto:nazareno@computacao.ufcg.edu.br">Entre em contato!</a></p>
+			<div id="lhama"><img src="ico.png" /></div>
+			<div id="footer-content">
+				<p><a href="index.html">Página inicial</a> &middot; Dúvidas? <a href="mailto:nazareno@computacao.ufcg.edu.br">Entre em contato!</a> &middot; SI1 2015.1 @ UFCG</p>
+			</div>
 		</footer>
 	</body>
 </html>
