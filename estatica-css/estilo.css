@@ -62,6 +62,7 @@ input:focus {
 
 #footer-content {
 	float:right;
+	margin-right: 5px;
 }
 
 #lhama {
@@ -69,7 +70,8 @@ input:focus {
 }
 
 #lhama img {
-	margin:5px 10px;
+	margin-top: 5px;
+	width:30%;
 }
 
 .form-container {
@@ -94,5 +96,4 @@ input:focus {
 
 .smile {
 	text-align: center;
-
 }
