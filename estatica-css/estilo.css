@@ -117,4 +117,8 @@ input:focus {
 	#lhama img {
 		width: 30% !important;
 	}
+
+	.video-container p {
+	font-size:0.8em;
+}
 }
