@@ -98,7 +98,16 @@ input:focus {
 	text-align: center;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 600px) {
+	input {
+		width: 150px;
+		height: 20px;
+		border: 1px #c9c9c9 solid;
+	}
+}
+
+
+@media screen and (max-width: 965px) {
 	#lhama, #footer-content {
 		width: 100%;
 		text-align: center;
@@ -108,9 +117,4 @@ input:focus {
 	#lhama img {
 		width: 30% !important;
 	}
-
-	input {
-		width: 150px;
-		height: 20px;
-		border: 1px #c9c9c9 solid;
 }
