@@ -28,7 +28,7 @@ article {
 h2 {
 	margin: 25px 10px;
 	font: bold 2.8em Arial;
-	line-height: 2rem;
+	line-height: 2.5rem;
 	font-weight: 2rem;
 }
 
@@ -115,6 +115,7 @@ input:focus {
 
 	h2 {
 		font-size: 2em;
+		line-height: 2rem;
 	}
 }
 
