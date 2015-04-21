@@ -320,13 +320,13 @@ a:focus {
 /* llama's sandbox */
 
 .llama {
-    height: 80px;
+    height: 50px;
     background: url(../img/lhama.png) center no-repeat;
 }
  
 @media screen and (max-width: 768px) {
     .llama {
-        height: 24px;
+        height: 40px;
         background: url(../img/lhama_ico.png) center no-repeat;
     }
 }
