@@ -82,20 +82,22 @@
                     <h2>Enquanto isso...</h2>
                     <p>Que tal começar desde já? Adicione os assuntos que você deseja aprender e ponha a mão na massa!</p>
                     <form ng-submit="adicionarAssunto(novoAssunto)">
-                        <input type="text" placeholder="quer aprender o quê?" ng-model="novoAssunto.nome" />
-                        <button type="submit">adicionar</button>
+                        <input type="text" placeholder="quer aprender o quê?" ng-model="novoAssunto.nome" maxlength="28" />
+                        <input type="submit" name="enviar" value="Adicionar" ng-model="novoAssunto.nome" />
+                        
+                        <!-- <button type="submit">adicionar</button> -->
                     </form> 
-                    <div class="llamainfo llamaleft llamatodo col-lg-6">
-                        <p>Aprender</p>
-                        <li ng-if="!isEditando()" ng-repeat="assunto in assuntos | filter:{status: 'aprender'}">
+                    <div class="llamatodo llamaleft col-lg-6">
+                        <h4>Aprender</h4>
+                        <li ng-repeat="assunto in assuntos | filter:{status: 'aprender'}">
                             <p>{{assunto.nome}} 
                                 <a ng-click="setConcluido(assunto)" title="Marcar como concluído"><i class="fa fa-check"></i><a> 
                                 <a ng-click="removerAssunto(assunto)" title="Remova este assunto"> <i class="fa fa-times"></i> </a>
                             </p>
                         </li>
                     </div>
-                    <div class="llamainfo llamaright llamadone col-lg-6">
-                       <p>Concluído</p>
+                    <div class="llamadone llamaright col-lg-6">
+                       <h4>Concluído</h4>
                        <li ng-repeat="assunto in assuntos | filter:{status: 'concluido'}">
                             <p>{{assunto.nome}} 
                                 <a ng-click="unsetConcluido(assunto)" title="Marcar como não-concluído"><i class="fa fa-reply"></i></a> 
@@ -118,7 +120,7 @@
 
     <!-- Angular -->
    
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+    <script src="js/angular.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.js"></script>
   <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
