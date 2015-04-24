@@ -5,7 +5,10 @@ angular.module('taskBoard', [
       $scope.assuntos = []
 
       function adicionarAssunto(novoAssunto) {
-        if (isJaAdicionado(novoAssunto))
+        if (isJaAdicionado(novoAssunto) || novoAssunto === null)
+          return;
+
+        if (novoAssunto.nome.trim() === "")
           return;
 
         novoAssunto.status = 'aprender';
