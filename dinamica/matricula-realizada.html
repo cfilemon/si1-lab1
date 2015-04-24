@@ -31,7 +31,7 @@
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" ng-controller="taskBoardCtrl">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
     <nav class="navbar navbar-custom llamabar" role="navigation">
@@ -75,7 +75,7 @@
     </section>
 
     <!-- Aprender -->
-    <section id="aprender" class="content-section text-center">
+    <section id="aprender" class="content-section text-center" ng-controller="taskBoardCtrl">
         <div class="download-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
@@ -89,7 +89,7 @@
                     </form> 
                     <div class="llamatodo llamaleft col-lg-6">
                         <h4>Aprender</h4>
-                        <li ng-repeat="assunto in assuntos | filter:{status: 'aprender'}">
+                        <li ng-repeat="assunto in assuntos | filter:{status: 'aprender'}" ng-cloak>
                             <p>{{assunto.nome}} 
                                 <a ng-click="setConcluido(assunto)" title="Marcar como concluído"><i class="fa fa-check"></i><a> 
                                 <a ng-click="removerAssunto(assunto)" title="Remova este assunto"> <i class="fa fa-times"></i> </a>
@@ -98,7 +98,7 @@
                     </div>
                     <div class="llamadone llamaright col-lg-6">
                        <h4>Concluído</h4>
-                       <li ng-repeat="assunto in assuntos | filter:{status: 'concluido'}">
+                       <li ng-repeat="assunto in assuntos | filter:{status: 'concluido'}" ng-cloak>
                             <p>{{assunto.nome}} 
                                 <a ng-click="unsetConcluido(assunto)" title="Marcar como não-concluído"><i class="fa fa-reply"></i></a> 
                                 <a ng-click="removerAssunto(assunto)" title="Remova este assunto"> <i class="fa fa-times"></i> </a>
@@ -124,7 +124,7 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.js"></script>
 
     <!-- Ultramegaincrível Llama Task Board v 0.0.1 apha -->
-    
+
     <script type="text/javascript" src="js/llamaTaskBoard.js"></script>
 
 </body>
